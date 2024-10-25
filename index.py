@@ -6,7 +6,8 @@ from pymongo.errors import PyMongoError
 from datetime import datetime
 
 # Carregar variáveis do arquivo .env
-load_dotenv()
+if os.getenv("VERCEL") is None:
+    load_dotenv()
 
 # Inicializar a aplicação Flask
 app = Flask(__name__)
@@ -74,4 +75,4 @@ def test_endpoint():
 
 # Testar o registro de uma interação manualmente no terminal
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run() 
