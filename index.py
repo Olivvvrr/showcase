@@ -75,4 +75,4 @@ def test_endpoint():
 
 # Testar o registro de uma interação manualmente no terminal
 if __name__ == "__main__":
-    app.run() 
+    app.run(host="0.0.0.0", port=5000) 
