@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page | Portifólio</title>
+    <title>Home page | Portfólio</title>
     <!-- Incluindo o Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -13,15 +13,26 @@
         <div class="flex items-center">
             <img src="https://github.com/Olivvvrr/showcase/blob/main/profile-pic.jpg?raw=true" alt="Avatar" class="w-16 h-16 rounded-full border-2 border-gray-500">
             <div class="ml-4">
-                <h1 class="text-white text-2xl font-bold"><a href="https://github.com/Olivvvrr" class="text-blue-500 hover:underline">Pedro</a></p></h1>
+                <h1 class="text-white text-2xl font-bold"><a href="https://github.com/Olivvvrr" class="text-blue-500 hover:underline">Pedro</a></h1>
                 <p class="text-gray-400">Olivvvrr · Sith Lord</p>
             </div>
         </div>
-<!--         <button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Edit profile</button> -->
     </header>
 
-    <!-- Área principal -->
+    <!-- Área principal com iframe para o Notion -->
     <main class="max-w-5xl mx-auto mt-8">
+        <h2 class="text-white text-3xl font-bold mb-4">Sistema de Análise de Interações de Usuários</h2>
+        
+        <!-- Link direto para o Notion -->
+        <p class="mb-4 text-gray-400">
+            Acesse a documentação completa <a href="https://simplistic-bladder-bd9.notion.site/Sistema-de-An-lise-de-Intera-es-de-Usu-rios-131b9bfbbd6c80d28f60eb811c922d84?pvs=4" target="_blank" class="text-blue-500 hover:underline">aqui</a>.
+        </p>
+
+        <!-- Iframe Notion -->
+        <iframe src="https://www.notion.so/SEU-LINK-AQUI" 
+                class="w-full h-[500px] border-2 border-gray-600 rounded-md"
+                allowfullscreen></iframe>
+    </main>
 
     <!-- Rodapé -->
     <footer class="mt-8 p-4 text-center text-gray-500 border-t border-gray-700">
